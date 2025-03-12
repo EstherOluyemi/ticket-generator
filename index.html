@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Conf conference ticket</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="write-up">
+            <img src="./images/mobilelogo-full.svg" alt="">
+            <p>Your Journey to Coding Conf 2025 Starts Here!</p>
+            <p>Secure your spot at next year's biggest coding conference</p>
+        </div>
+
+        <form action="" class="conference-form">
+            <div class="file-upload">
+                <div class="drop-area">
+                    <div class="area-before">
+                        <div class="icon-box">
+                            <img src="./images/icon-upload.svg" alt="">
+                        </div>
+                        <h5>Drag and drop or <label for="file-input">click to upload</label></h5>
+                        <input type="file" id="file-input" hidden>
+                    </div>
+                    <!--After the photo has been uploaded-->
+                    <div class="image-preview-box">
+                        <div class="image-box">
+                            <img src="./images/image-avatar.jpg" alt="" id="preview-image">
+                        </div>
+                        <div>
+                            <button class="change-button">Change Image</button>
+                            <button class="remove-button">Remove Image</button>
+                        </div>
+                    </div>
+                </div>
+                <span id="file-upload-error">
+                    <img src="./images/info_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="error-icon">
+                    <h5>File too large. Please upload a photo under 500KB</h5>
+                </span>
+                <div class="upload-icon">
+                    <img src="./images/icon-info.svg" alt="">
+                    <h5>Upload your photo (JPG or PNG, max-size: 500KB)</h5>
+                </div>
+            </div>
+            <label for="text">Full name</label><br>
+            <input type="text" id="name-input"><br>
+            <label for="email">Email address</label><br>
+            <input type="text" name="email" placeholder="example@email.com" id="email-input">
+            <span id="email-error">
+                <img src="./images/info_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="error-icon">
+                <h5>Enter a valid email address</h5>
+            </span>
+            <label for="text">Github Username</label><br>
+            <input type="text" placeholder="@yourusername"><br>
+            <button type="submit" class="ticket-button">Generate my ticket</button>
+        </form>
+
+        <script src="./index.js"></script>
+    </div>
+</body>
+
+</html>
